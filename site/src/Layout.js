@@ -3,7 +3,7 @@ import history from 'react-router/lib/browserHistory';
 
 import Alert from 'react-s-alert';	
 
-//import { Link } from 'react-router';
+import { Link } from 'react-router';
 
 class Layout extends Component{
 
@@ -28,19 +28,19 @@ class Layout extends Component{
 		        <div id="sidebar-wrapper">
 		            <ul className="sidebar-nav">
 		                <li>
-		                    <a href="#">Records</a>
+		                    <Link to="records">Records</Link>
 		                </li>
 		                <li>
-		                    <a href="#">Search Engine</a>
+		                    <Link to="search">Search Engine</Link>
 		                </li>
 		                <li>
-		                    <a href="#">Violations</a>
+		                    <Link to="violations">Violations</Link>
 		                </li>
 		                <li>
-		                    <a href="#">LTO Statistics</a>
+		                    <Link to="statistics">LTO Statistics</Link>
 		                </li>
 		                <li>
-		                    <a href="#">Violations Report</a>
+		                    <Link to="report">Violations Report</Link>
 		                </li>
 		                <li>
 		                    <a onClick={()=>{

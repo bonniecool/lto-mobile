@@ -19,6 +19,10 @@ import Login from './pages/login';
 import App from './App';
 import Search from './pages/search';
 import Scan from './pages/scan';
+import Records from './pages/records';
+import Violations from './pages/violations';
+import Statistics from './pages/statistics';
+import Report from './pages/report';
 
 export const Routes = () =>{
 
@@ -36,6 +40,11 @@ export const Routes = () =>{
 					<Route path="/login" component={Login}/>
 					<Route path="/search" component={ Search }/>
 					<Route path="/scan" component={ Scan }/>
+					<Route path="/records" component={ Records }/>
+					<Route path="/violations" component={ Records }/>
+					<Route path="/report" component={ Report }/>
+					<Route path="/statistics" component={ Statistics }/>
+
 				</Route>
 			</Router>
 		</Provider>
