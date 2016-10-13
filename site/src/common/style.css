@@ -1,0 +1,7 @@
+.qr-scanner-window{
+    border: 1px solid #ddd;
+    padding: 2px;
+    border-radius: 2px;
+    background: #000;
+    margin: 0 auto;
+}
