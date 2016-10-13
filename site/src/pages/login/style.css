@@ -1,0 +1,40 @@
+
+.header-front
+{
+	height: 200px;
+	background: url(/img/logo.png?v=5) no-repeat center;
+}
+
+.header-title
+{
+  background: url(/img/logo_title.png?v=5) no-repeat center;  
+  position: relative;
+  height: 100%;
+  top: -120px;
+}
+
+.header-top
+{
+  height: 130px;
+  background: #ff8f00;
+}
+
+.login-wrapper{
+    text-align: center;
+    max-width: 310px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.login-wrapper input{
+  margin-bottom: 5px;
+}
+
+.footer{
+    border-top: 2px solid #eee;
+    text-align: center;
+    margin-top: 50px;
+    color: #999;
+}
