@@ -41,7 +41,7 @@ export const Routes = () =>{
 					<Route path="/search" component={ Search }/>
 					<Route path="/scan" component={ Scan }/>
 					<Route path="/records" component={ Records }/>
-					<Route path="/violations" component={ Records }/>
+					<Route path="/violations" component={ Violations }/>
 					<Route path="/report" component={ Report }/>
 					<Route path="/statistics" component={ Statistics }/>
 

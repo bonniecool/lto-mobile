@@ -1,0 +1,16 @@
+.main.header{
+    width: 100%;
+    background: #ff8f00;
+    height: 48px;
+    padding: 7px;
+}
+
+.btn-scan{
+    padding: 0px 6px;
+}
+
+.btn-scan i{
+    font-size: 32px;
+    bottom: -2px;
+    position: relative;
+}

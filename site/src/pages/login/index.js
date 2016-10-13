@@ -17,7 +17,7 @@ class Login extends Component {
 		const { user, password } = this.state;
 
 		return (
-			<div className="login animated fadeIn">
+			<div className="login">
 				<div className="header-top"/>
 				<div className="header-front">
 					<div className="header-title"/>
@@ -30,18 +30,23 @@ class Login extends Component {
 						Alert.warning("Logging-in...", {
 							position: 'top-right',
 							effect: 'slide',
-							timeout: 10000
+							timeout: 1000
 						})
 						setTimeout(()=>{
 							if((user === "admin" || password === "admin") || (user === "Admin" || password === "Admin")){
 								sessionStorage.setItem('user',JSON.stringify(this.state))
 								history.push('/');
+								Alert.success("Login Success...", {
+									position: 'top-right',
+									effect: 'slide',
+									timeout: 1000
+								})
 								return;
 							}
 							Alert.error("Access Denied...", {
 								position: 'top-right',
 								effect: 'slide',
-								timeout: 10000
+								timeout: 3000
 							})
 						},1000)
 					}}>
