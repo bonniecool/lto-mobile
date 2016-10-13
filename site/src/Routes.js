@@ -19,6 +19,7 @@ import Login from './pages/login';
 import App from './App';
 import Search from './pages/search';
 import Scan from './pages/scan';
+import Records from './pages/records';
 
 export const Routes = () =>{
 
@@ -36,6 +37,8 @@ export const Routes = () =>{
 					<IndexRoute component={ App }/>
 					<Route path="/search" component={ Search }/>
 					<Route path="/scan" component={ Scan }/>
+					<Route path="/records" component={ Records }/>
+
 				</Route>
 			</Router>
 		</Provider>
