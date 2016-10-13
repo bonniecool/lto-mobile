@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-//import history from 'react-router/lib/browserHistory';
+import history from 'react-router/lib/browserHistory';
+
+import Alert from 'react-s-alert';	
 
 //import { Link } from 'react-router';
 
@@ -19,6 +21,7 @@ class Layout extends Component{
 
 	render(){
 		//const { search } = this.state;
+
 		return(
 			<div id="wrapper" className={this.state.toggled ? 'toggled' : ''}>
 
@@ -40,7 +43,12 @@ class Layout extends Component{
 		                    <a href="#">Violations Report</a>
 		                </li>
 		                <li>
-		                    <a href="#">Log Out</a>
+		                    <a onClick={()=>{
+		                    	sessionStorage.clear();
+		                    	setTimeout(()=>{
+		                    		history.push("/login")
+		                    	},500);								
+		                    }}>Log Out</a>
 		                </li>
 
 		               
@@ -52,7 +60,8 @@ class Layout extends Component{
 		            <div className="container-fluid">
 						{this.props.children}
 		            </div>
-		        </div>				
+		        </div>		
+				<Alert stack={{limit: 3}} />		
 			</div>
 		)
 	}

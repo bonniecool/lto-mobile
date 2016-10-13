@@ -17,7 +17,7 @@ class Login extends Component {
 		const { user, password } = this.state;
 
 		return (
-			<div className="animated fadeIn">
+			<div className="login animated fadeIn">
 				<div className="header-top"/>
 				<div className="header-front">
 					<div className="header-title"/>
@@ -30,7 +30,7 @@ class Login extends Component {
 						Alert.warning("Logging-in...", {
 							position: 'top-right',
 							effect: 'slide',
-							timeout: 1000
+							timeout: 10000
 						})
 						setTimeout(()=>{
 							if((user === "admin" || password === "admin") || (user === "Admin" || password === "Admin")){
@@ -41,7 +41,7 @@ class Login extends Component {
 							Alert.error("Access Denied...", {
 								position: 'top-right',
 								effect: 'slide',
-								timeout: 1000
+								timeout: 10000
 							})
 						},1000)
 					}}>
@@ -50,7 +50,6 @@ class Login extends Component {
 						<button type="submit" className="btn btn-primary btn-block">Login</button>
 					</form>
 				</div>
-				<Alert stack={{limit: 3}} />
 
 				<div className="footer">
 					All Rights Reserved. <a>i-SYS</a> Corp 2013
