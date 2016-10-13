@@ -15,7 +15,7 @@ class Layout extends Component{
 	render(){
 		const { search } = this.state;
 		return(
-			<div>
+			<div className={`animated ${(window.innerWidth > 768) ? "fadeIn" : "fadeInRight"}`}>
 				<nav className="navbar navbar-default">
 					<div className="container">
 						

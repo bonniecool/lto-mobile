@@ -17,7 +17,7 @@ class Login extends Component {
 		const { user, password } = this.state;
 
 		return (
-			<div>
+			<div className="animated fadeIn">
 				<div className="header-top"/>
 				<div className="header-front">
 					<div className="header-title"/>
@@ -39,10 +39,10 @@ class Login extends Component {
 								return;
 							}
 							Alert.error("Access Denied...", {
-							position: 'top-right',
-							effect: 'slide',
-							timeout: 1000
-						})
+								position: 'top-right',
+								effect: 'slide',
+								timeout: 1000
+							})
 						},1000)
 					}}>
 						<input placeholder="User" className="form-control" type="text" onChange={(e)=>this.setState({user: e.target.value})} value={user}/>
