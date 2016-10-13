@@ -24,26 +24,30 @@ class Layout extends Component{
 
 		        <div id="sidebar-wrapper">
 		            <ul className="sidebar-nav">
-		                <li className="sidebar-brand">
-		                    <a href="#">
-		                        Start Bootstrap
-		                    </a>
+		                <li>
+		                    <a href="#">Records</a>
 		                </li>
 		                <li>
-		                    <a href="#">Dashboard</a>
+		                    <a href="#">Search Engine</a>
 		                </li>
 		                <li>
-		                    <a href="#">Shortcuts</a>
+		                    <a href="#">Violations</a>
 		                </li>
 		                <li>
-		                    <a href="#">Overview</a>
+		                    <a href="#">LTO Statistics</a>
 		                </li>
+		                <li>
+		                    <a href="#">Violations Report</a>
+		                </li>
+		                <li>
+		                    <a href="#">Log Out</a>
+		                </li>
+
 		               
 		            </ul>
 		        </div>
 
 		        <div id="page-content-wrapper" style={{marign: "0px", padding: "0px"}}>
-
                     <a className="btn btn-default" id="menu-toggle" onClick={this.toggle}>Menu</a>
 		            <div className="container-fluid">
 						{this.props.children}
