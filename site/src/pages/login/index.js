@@ -17,7 +17,7 @@ class Login extends Component {
 		const { user, password } = this.state;
 
 		return (
-			<div className="animated fadeIn">
+			<div className="login">
 				<div className="header-top"/>
 				<div className="header-front">
 					<div className="header-title"/>
@@ -36,12 +36,17 @@ class Login extends Component {
 							if((user === "admin" || password === "admin") || (user === "Admin" || password === "Admin")){
 								sessionStorage.setItem('user',JSON.stringify(this.state))
 								history.push('/');
+								Alert.success("Login Success...", {
+									position: 'top-right',
+									effect: 'slide',
+									timeout: 1000
+								})
 								return;
 							}
 							Alert.error("Access Denied...", {
 								position: 'top-right',
 								effect: 'slide',
-								timeout: 1000
+								timeout: 3000
 							})
 						},1000)
 					}}>
@@ -50,7 +55,6 @@ class Login extends Component {
 						<button type="submit" className="btn btn-primary btn-block">Login</button>
 					</form>
 				</div>
-				<Alert stack={{limit: 3}} />
 
 				<div className="footer">
 					All Rights Reserved. <a>i-SYS</a> Corp 2013

@@ -35,13 +35,13 @@ export const Routes = () =>{
 	return(
 		<Provider store={ store }>
 			<Router history={ history } onUpdate={()=>{ window.scrollTo(0,0);}}>
-				<Route path="/login" component={Login}/>
 				<Route path="/" component={ Layout }>
 					<IndexRoute component={ App }/>
+					<Route path="/login" component={Login}/>
 					<Route path="/search" component={ Search }/>
 					<Route path="/scan" component={ Scan }/>
 					<Route path="/records" component={ Records }/>
-					<Route path="/violations" component={ Records }/>
+					<Route path="/violations" component={ Violations }/>
 					<Route path="/report" component={ Report }/>
 					<Route path="/statistics" component={ Statistics }/>
 
