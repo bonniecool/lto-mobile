@@ -15,6 +15,8 @@ import Layout from './Layout';
 
 //PAGE
 import App from './App';
+import Search from './pages/search';
+import Scan from './pages/scan';
 
 export const Routes = () =>{
 	return(
@@ -22,7 +24,8 @@ export const Routes = () =>{
 			<Router history={ history } onUpdate={()=>{ window.scrollTo(0,0);}}>
 				<Route path="/" component={ Layout }>
 					<IndexRoute component={ App }/>
-					{/*<Route path="/page" component={ PAGE }/>*/}
+					<Route path="/search" component={ Search }/>
+					<Route path="/scan" component={ Scan }/>
 				</Route>
 			</Router>
 		</Provider>
