@@ -6,10 +6,12 @@
     "react-scripts": "0.6.1"
   },
   "dependencies": {
+    "laravel-elixir": "^6.0.0-9",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "laravel-elixir": "^6.0.0-9",
-    "react-select": "^1.0.0-rc.2"
+    "react-router": "^2.8.1",
+    "react-select": "^1.0.0-rc.2",
+    "redux": "^3.6.0"
   },
   "scripts": {
     "start": "react-scripts start",
