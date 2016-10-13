@@ -24,11 +24,15 @@ export const Routes = () =>{
 
 	const hasLogin = sessionStorage.getItem('user') || false;
 
+	if(!hasLogin){
+		history.push("/login");
+	}
 
 	return(
 		<Provider store={ store }>
 			<Router history={ history } onUpdate={()=>{ window.scrollTo(0,0);}}>
-				<Route path="/" component={ (hasLogin) ? Layout : Login }>
+				<Route path="/login" component={Login}/>
+				<Route path="/" component={ Layout }>
 					<IndexRoute component={ App }/>
 					<Route path="/search" component={ Search }/>
 					<Route path="/scan" component={ Scan }/>

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import history from 'react-router/lib/browserHistory';
 
 import { Link } from 'react-router';
+import Alert from 'react-s-alert';	
+
+import 'react-s-alert/dist/s-alert-default.css';
 
 class Layout extends Component{
 
@@ -67,6 +70,7 @@ class Layout extends Component{
 						</div>
 					</div>
 				</nav>
+				<Alert stack={{limit: 3}} />
 				<div className="container">
 					{this.props.children}
 				</div>
